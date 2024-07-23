@@ -1,0 +1,47 @@
+body, html {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.cubo {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-25deg) rotateY(-30deg);
+}
+
+.cara {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #ccc;
+}
+
+.cara.Frente {
+  transform: rotateY(0deg) translateZ(100px);
+  background-color: red;
+}
+
+.cara.Atras {
+  transform: rotateY(90deg) translateZ(100px);
+  background-color: blue  ;
+}
+
+.cara.Arriba {
+  transform: rotateX(90deg) translateZ(100px);
+  background-color: orange;
+}
+
+.cara.Abajo {
+  transform: rotateX(-90deg) translateZ(104px) translateY(8px);
+  background-color: rgb(255, 0, 255);
+}
+
+
+

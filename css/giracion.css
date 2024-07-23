@@ -1,0 +1,70 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.cubo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-45deg);
+    animation: rotate 7s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateX(-30deg) rotateY(-45deg) rotate(0deg);
+    }
+    to {
+        transform: rotateX(-30deg) rotateY(-45deg) rotate(360deg);
+    }
+}
+
+.cara {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+}
+
+/* Front */
+.cara.front {
+    transform: rotateY(0deg) translateZ(100px);
+    background-color: purple;
+}
+
+/* Back */
+.cara.back {
+    transform: rotateY(180deg) translateZ(100px);
+    background-color: red;
+}
+
+/* Right */
+.cara.right {
+    transform: rotateY(90deg) translateZ(100px);
+    background-color: green;
+}
+
+/* Left */
+.cara.left {
+    transform: rotateY(-90deg) translateZ(100px);
+    background-color: blue;
+}
+
+/* Top */
+.cara.top {
+    transform: rotateX(90deg) translateZ(100px);
+    background-color: orange;
+}
+
+/* Bottom */
+.cara.bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+    background-color: rgb(255, 0, 0);
+}
