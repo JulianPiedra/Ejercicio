@@ -93,7 +93,8 @@ body {
 
 .hero {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-evenly;
+  width: fit-content;
   align-items: center;
   padding: 50px 100px;
   background-color: #100e1b;
@@ -127,12 +128,21 @@ body {
 }
 
 .hero-image {
-  height: 400px;
-  margin-left: 20px;
+  height: 914px ;
+  width: 635px;
+  position: absolute;
+  top: 0;
+  right: 10%;
+  z-index: 0;
 }
 
 .main-image {
-  height: 500px;
+  height: 914px ;
+  width: 635px;
+  position: absolute;
+  top: -5%;
+  right: 20%;
+  z-index: 1;
 }
 
 .countdown {
@@ -149,6 +159,7 @@ body {
   position: relative;
   margin: 50px auto;
   width: 70%;
+  z-index: 2;
 }
 
 .countdown-content {
