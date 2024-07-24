@@ -1,0 +1,92 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+body {
+  margin: 0;
+  font-family: Sora, sans-serif;
+  background-color: #100e1b;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 22px;
+  padding: 31px 0px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 70px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  position: relative;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links .dropdown {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #fecc02;
+  list-style: none;
+  padding: 10px 0;
+}
+
+.nav-links .dropdown li {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.nav-links .dropdown li a {
+  font-size: 14px;
+}
+
+.nav-links li:hover .dropdown {
+  display: block;
+}
+
+.search-social {
+  display: flex;
+  align-items: center;
+}
+
+.search-social input {
+  padding: 5px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  width: 260px; 
+  height: 33px;
+  font-size: 15px;
+  background-color: #1a1626;
+}
+
+.search-social a {
+  margin-left: 10px;
+}
+
+.search-social a img {
+  height: 20px;
+}
