@@ -1,0 +1,71 @@
+body {
+    background-color: #0B0A12;
+    font-family: 'Sora', sans-serif;
+}
+.texto {
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
+.texto h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.texto p {
+    font-size: 17px;
+}
+.cartas {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    margin: 50px auto;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1400px;
+}
+.carta {
+    display: flex;
+    flex-direction: row;
+    width: 310px;
+    height: 112px;  
+    border-radius: 10px;
+    margin: 0;
+    background-color: #100E1A;
+}
+.imagen {
+    align-content: center;
+}
+.imagen img {
+    width: 53.46px;
+    height: 53.46px;
+    border-radius: 50%;
+}
+.textoCarta {
+    align-self: center;
+    width: 185px;
+    height: 62px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+.informacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 20px;
+}
+.textoCarta h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+    color: white;
+    margin: 0 0 10px 20px;
+}
+.textoCarta p {
+    margin: 0 0 0 20px;
+    text-align: left;
+    font-size: 15px;
+    color: yellow;
+}
