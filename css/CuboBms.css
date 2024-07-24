@@ -1,0 +1,42 @@
+.contenedor-cubo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Esto hace que el contenedor tenga el alto de la ventana del navegador */
+}
+.cubo {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(-30deg);
+    animation: rotate 10s infinite linear;
+    
+}
+
+.cubo > div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.elementoRojo {
+    background: red;
+    transform: rotateY(0deg) translateZ(100px);
+}
+
+.elementoAzul {
+    background: blue;
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.elementoNaranja {
+    background: orange;
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.elementoVioleta {
+    background: violet;
+    transform: rotateY(-90deg) translateZ(100px);
+}
