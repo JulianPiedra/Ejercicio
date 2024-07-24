@@ -1,16 +1,12 @@
-body, html {
-    margin: 0;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0;
-}
 
 .cubo {
     width: 200px;
     height: 200px;
     position: relative;
+    align-self: center;
+    align-content: center;
+    margin: 0 auto;
+    top: 200px;
     transform-style: preserve-3d;
     transform: rotateX(-30deg) rotateY(-45deg);
     animation: rotate 7s infinite linear;
